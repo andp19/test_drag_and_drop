@@ -19,7 +19,7 @@ form.addEventListener("submit", function (e) {
 });
 
 function renderText(text) {
-  const letters = text.replaceAll(" ", "").split("");
+  const letters = text.split("");
 
   area.innerHTML = "";
   selectedLetters = [];
