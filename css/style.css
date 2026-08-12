@@ -14,6 +14,7 @@ body {
 }
 
 .form {
+  margin-bottom: 20px;
 }
 
 .input {
@@ -21,12 +22,15 @@ body {
   color: #575D6D;
   border-radius: 5px;
   border: 1px solid #4299E1;
-  height: 40px;
+  height: 45px;
   padding: 5px 15px;
   font-size: 18px;
   line-height: 22px;
   outline-color: #4299E1;
   width: 500px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  max-width: 100%;
 }
 
 .input::placeholder {
@@ -39,14 +43,30 @@ body {
   border: none;
   color: #fff;
   border-radius: 5px;
-  height: 40px;
+  height: 45px;
   padding: 5px 15px;
   cursor: pointer;
   font-size: 18px;
   line-height: 22px;
   min-width: 100px;
+  margin-bottom: 10px;
 }
 
 .area {
   position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  min-height: 350px;
+  border: 1px solid #4299E1;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 28px;
+  line-height: 32px;
+  color: #575D6D;
+}
+
+.letter {
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
