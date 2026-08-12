@@ -125,7 +125,13 @@ area.addEventListener("drop", function (e) {
     return;
   }
 
+  const target = e.target.closest(".letter");
+
+  if (!target || draggedLetters.includes(target)) {
+    return;
+  }
+
   draggedLetters.forEach(function (letter) {
-    area.appendChild(letter);
+    area.insertBefore(letter, target);
   });
 });
